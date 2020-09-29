@@ -35,14 +35,14 @@ class SinglyLinkedList:
         self.oldest.value = value
         self.oldest = self.oldest.next
 
-    def __iter__(self):
-        item = self.head
+    # def __iter__(self):
+    #     item = self.head
 
-        yield item.value
+    #     yield item.value
 
-        while item.next is not self.head:
-            item = item.next
-            yield item.value
+    #     while item.next is not self.head:
+    #         item = item.next
+    #         yield item.value
 
     def to_array(self):
         array = [node for node in self]
